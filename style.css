@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0 50px;
+  background: linear-gradient(-45deg, #ff416c, #ff4b2b, #1db954, #191414);
+  background-size: 400% 400%;
+  animation: gradientBG 12s ease infinite;
+  display: flex;
+  align-items: center;
+}
+
+@keyframes gradientBG {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+.container1 h2{
+    font-size: 50px;
+    font-weight:lighter;
+}
+.container1 {
+  min-height: 200px;
+  width: 400px;
+  margin: 23px auto;
+  border-radius: 15px;
+  padding: 40px 40px;
+  /* Background blur effect */
+  background: rgba(255, 255, 255, 0.1); /* semi-transparent */
+  backdrop-filter: blur(15px);
+  color: azure; 
+  font-family: 'Poppins', sans-serif;
+  box-shadow: #191414;
+  
+}
+.username-style{
+    border-radius: 20px;
+    border: 1px  solid whitesmoke;
+    padding: 10px 10px;
+    background-color: transparent;
+    color: whitesmoke;
+    margin-top: 10px;
+    width: auto;
+    height: 45px;
+    transition: transform 0.1s ease-out;
+}
+.username-style::placeholder {
+  color: azure;       /* text color of placeholder */
+  opacity: 1;         /* make sure it’s visible */
+  font-size: smaller;
+}
+
+.username-style:hover{
+    transform: scale(1.1);
+}
+
+.remember-me{
+    font-size: smaller;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+#rememberMe{
+    transition: transform 0.1s ease-in;
+}
+#rememberMe:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.forget-password{
+    text-decoration: none;
+    color: white;
+    font-size: smaller;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+.forget-password:hover{
+    text-decoration: underline;
+    color: #dec2ea;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.button{
+    height: 38px;
+    width: 100px;
+    border: 1px solid whitesmoke;
+    color: white;
+    border-radius: 20px;
+    background-color: transparent;
+    transition: transform 0.3s ease-in-out;
+}
+button:hover{
+    transform: scale(1.2);
+    background-color: chartreuse;
+}
