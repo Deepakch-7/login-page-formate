@@ -18,7 +18,7 @@ A **responsive login page** built using HTML, CSS, and JavaScript. This project 
 ## Screenshot
 
 ![Login Page Screenshot](screenshot.png)  
-*(Optional: Add a screenshot of your login page here)*
+
 
 ## Usage
 
